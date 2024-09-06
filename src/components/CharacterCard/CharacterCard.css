@@ -1,0 +1,27 @@
+.characterCard{
+  background-color: white;
+  border-radius: 15px;
+  text-decoration: none;
+  color: black;
+  width: 300px;
+  padding: 0px;
+}
+
+.characterCard:hover{
+  opacity: 0.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.characterCard__Text{
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.characterCard__Text > p{
+  color: blueviolet;
+}
+
+.card{
+  border-radius: 15px 15px 0px 0px;
+}

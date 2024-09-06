@@ -1,0 +1,26 @@
+.form__Input {
+  background-color: dimgray;
+  width: 50%;
+  color: white;
+  border: 2px solid silver;
+  padding: 10px;
+  font-size: 1.3em;
+  margin: 0.5em;
+}
+
+.form__Input:focus {
+    background-color: rgb(80, 80, 80);
+    border: 2px solid mediumpurple;
+}
+
+.signIn {
+    color: white;
+}
+
+.signIn:hover {
+    color: silver;
+}
+
+::placeholder{
+    color: lightgray;
+}

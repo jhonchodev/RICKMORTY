@@ -1,0 +1,21 @@
+.PageNotFound {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.PageNotFound__Text{
+    padding: 50px;
+}
+
+.PageNotFound__Image{
+    border-radius: 50%;
+    box-shadow: 20px 20px 10px silver   ;
+
+}
+
+.PageNotFound__Button{
+    margin-left: 300px;
+}

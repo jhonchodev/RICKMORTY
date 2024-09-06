@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Concert+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Varela+Round&display=swap");
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #181716;
+  background-image: url("assets/stars.svg");
+  background-repeat: repeat;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Concert One", cursive;
+}
+
+h2 {
+  font-family: "Concert One", cursive;
+  color: white;
+}
+
+h4 {
+  font-family: "Varela Round", sans-serif;
+}
+
+.btn {
+  padding: 0.375rem 2rem;
+}
+
+.btn.btn-normal {
+  color: white;
+  background-color: #606e8c;
+  border-color: #606e8c;
+}
+
+.btn.btn-normal:hover {
+  color: white;
+  background-color: rgb(108, 124, 160);
+  border-color: #606e8c;
+  box-shadow: 0 0 0 0.2rem rgb(79, 90, 114);
+}
+
+.btn.btn-special {
+  color: white;
+  background-color: #F4A900;
+  border-color: #F4A900;
+}
+
+.btn.btn-special:hover {
+  color: white;
+  background-color: rgb(255, 220, 45);
+  border-color: #606e8c;
+  box-shadow: 0 0 0 0.2rem rgb(214, 179, 0);
+}

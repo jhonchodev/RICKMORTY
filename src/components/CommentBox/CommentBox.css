@@ -1,0 +1,17 @@
+.comment {
+  display: block;
+  background-color: rgb(35, 35, 35);
+  width: 50rem;
+  margin-top:20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.comment_Textarea {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    width: 95%;
+}

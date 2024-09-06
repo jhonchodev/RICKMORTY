@@ -1,0 +1,34 @@
+.homePage__Hero {
+  width: 100%;
+  height: 294px;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  background: url("../../assets/rickAndMorty.jpg");
+  background-repeat: repeat-x;
+}
+
+.homePage__Title {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding: 70px;
+}
+
+.homePage__Title > h1 {
+  font-size: 4em;
+  color: white;
+  text-shadow: 12px 12px 4px darkgray;
+}
+
+.homePage__List {
+  margin-left: 25px;
+}
+
+.homePage__Buttons{
+  justify-content: space-between;
+  padding: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+}

@@ -1,0 +1,28 @@
+.characterCardDetails {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+  color: white;
+  background-color: rgb(35, 35, 35);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.characterCardDetails__Image {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.characterCardDetails__Info {
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.characterCardDetails__Row {
+  width: 100%;
+}
+
+.characterCardDetails__Container {
+    display: flex;
+    justify-content: space-evenly;
+}
