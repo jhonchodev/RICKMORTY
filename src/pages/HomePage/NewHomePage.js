@@ -4,11 +4,10 @@ import { defaultCopy } from "../../utils/dictionary";
 import CharactersList from "../../components/CharactersList/CharactersList";
 import MiniLoader from "../../components/MiniLoader/MiniLoader";
 import Loader from "../../components/Loader/Loader";
-import { useCharacterViewModel } from "../../clean-architecture/viewmodels/CharacterViewModel";
 
 function NewHomePage() {
-    const { characters, loading, error, setNextPage, nextPage } = useCharacterViewModel();
-
+    // Utiliza el recurso correspondiente
+    
     if (loading && nextPage === 1) {
         return (
             <div className="d-flex justify-content-center">

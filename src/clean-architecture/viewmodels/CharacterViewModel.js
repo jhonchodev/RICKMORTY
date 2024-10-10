@@ -1,5 +1,5 @@
 // viewmodels/CharacterViewModel.js
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { CharacterRepository } from '../infraestructure/CharacterRepository';
 import { CharacterService } from '../application/CharacterService';
 
@@ -14,18 +14,15 @@ export const useCharacterViewModel = () => {
 
     const loadCharacters = async () => {
         try {
-            const charactersData = await characterService.getAllCharacters(nextPage);
-            setCharacters(charactersData);
+          // Invoca el llamado de todos los personajes según la página
         } catch (err) {
-            setError(err.message);
+            // Setear el error
         } finally {
-            setLoading(false);
+            // Setear la finalización de la ejecución indepedendiente del resultado
         }
     };
 
-    useEffect(() => {
-        loadCharacters();
-    }, [nextPage]);
-
+    // Cada cambio de página debe generar la ejecución de cargar todos los personajes
+   
     return { characters, loading, error, setNextPage, nextPage };
 };
