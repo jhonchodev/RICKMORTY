@@ -18,11 +18,14 @@ function useGetDatabase(firebase, characterId) {
 
   useEffect(() => {
     function get() {
-      firebase.getComments(characterId).on("value", function (snapshot) {
-        setComments(doStructuratedJson(snapshot.val()));
-        // console.log(snapshot.val());
+      // firebase.getComments(characterId).on("value", function (snapshot) {
+      //   setComments(doStructuratedJson(snapshot.val()));
+      //   setLoading(false);
+      // });
+
+      setTimeout(() => {
         setLoading(false);
-      });
+      }, 1000)
     }
     get();
   });

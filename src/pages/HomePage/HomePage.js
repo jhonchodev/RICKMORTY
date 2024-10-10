@@ -6,9 +6,6 @@ import MiniLoader from "../../components/MiniLoader/MiniLoader";
 import Loader from "../../components/Loader/Loader";
 import { useCallApi } from "../../services/Functions/useCallApi";
 import { API_ROUTES } from "../../utils/Routes";
-import { useCallApiWithInterceptor } from "../../services/Functions/useCallApiInterceptor";
-import { useCallApiFetchIntercept } from "../../services/Functions/useCallApiFetchIntercept";
-import { useCallApiAxiosInterceptor } from "../../services/Functions/useCallApiAxiosInterceptor";
 
 let responseDataArray = [];
 
@@ -21,22 +18,8 @@ function HomePage() {
     responseDataArray
   );
 
-  // const response = useCallApiWithInterceptor(
-  //   `${API_ROUTES.CHARACTERS_ROUTE}?page=${nextPage}`,
-  //   responseDataArray
-  // );
-
-  // const response = useCallApiFetchIntercept(
-  //   `${API_ROUTES.CHARACTERS_ROUTE}?page=${nextPage}`,
-  //   responseDataArray
-  // );
-
-  // const response = useCallApiAxiosInterceptor(
-  //   `?page=${nextPage}`,
-  //   responseDataArray
-  // );
-
   const loading = response.loading;
+  
   data = {
     information: response.data.info,
     results: [].concat(data.results, response.data.results)

@@ -11,13 +11,15 @@ import LoginPage from "./pages/LoginPage/LoginPage";
 import SignupPage from "./pages/SignupPage/SignupPage";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import Navbar from "./components/NavBar/NavBar";
+import NewHomePage from "./pages/HomePage/NewHomePage";
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Switch>
-        <Route exact path={ROUTES.HOME} component={HomePage} />
+        {/* <Route exact path={ROUTES.HOME} component={HomePage} /> */}
+        <Route exact path={ROUTES.HOME} component={NewHomePage} />
         <Route
           exact
           path="/CharacterCard/:characterId"
